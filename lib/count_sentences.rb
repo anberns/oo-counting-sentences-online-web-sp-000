@@ -15,6 +15,12 @@ class String
   end
 
   def count_sentences
-
+    count = 0 
+    self.each do |str|
+      if str.sentence? || str.question? || str.exclamation?
+        count += 1
+      end
+    end
+    count
   end
 end
