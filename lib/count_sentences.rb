@@ -16,7 +16,8 @@ class String
 
   def count_sentences
     count = 0 
-    self.each do |str|
+    arr = self.split
+    arr.each do |str|
       puts str
       if str.sentence? || str.question? || str.exclamation?
         count += 1
