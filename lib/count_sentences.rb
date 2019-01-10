@@ -18,7 +18,7 @@ class String
     count = 0 
     arr = self.split
     arr.each do |str|
-      puts str
+      
       if str.sentence? || str.question? || str.exclamation?
         count += 1
       end
